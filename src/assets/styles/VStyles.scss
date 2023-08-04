@@ -1,0 +1,57 @@
+$background: #1F2022;
+$text: #EEE;
+
+
+
+
+body {
+  header {
+    background: $background;
+    color: $text;
+
+    .my_logo {
+      color: $text;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .nav-link {
+      color: $text !important;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .my_logo:hover, .nav-link:hover {
+      color: #00ADB5 !important;
+      text-decoration: none !important;
+      transition: 0.5s !important;
+    }
+
+    .my_button {
+      border-radius: 3px;
+      background: $text;
+      color: #000;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .my_button:hover {
+      background-color: #00ADB5;
+      color: $text;
+      transition: 0.5s;
+    }
+  }
+
+  section {
+    background: $background;
+  }
+}

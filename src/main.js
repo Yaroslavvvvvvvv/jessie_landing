@@ -8,7 +8,10 @@ Vue.use(IconsPlugin)
 
 
 import 'bootstrap/dist/css/bootstrap.css'
+import ('../src/assets/styles/bootstrap.css')
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import ('../src/assets/styles/VStyles.scss')
+import('../src/assets/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf')
 
 
 Vue.config.productionTip = false

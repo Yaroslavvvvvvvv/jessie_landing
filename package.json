@@ -16,7 +16,9 @@
     "portal-vue": "v2.1.7",
     "vue": "^2.7.14",
     "vue-router": "^4.2.2",
-    "vuejs-paginate-next": "^1.0.2"
+    "vuejs-paginate-next": "^1.0.2",
+    "sass": "^1.64.2",
+    "sass-loader": "^13.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

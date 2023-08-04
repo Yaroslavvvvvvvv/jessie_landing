@@ -1,0 +1,45 @@
+body header {
+  background: #1F2022;
+  color: #EEE;
+}
+body header .my_logo {
+  color: #EEE;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+body header .nav-link {
+  color: #EEE !important;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+body header .my_logo:hover, body header .nav-link:hover {
+  color: #00ADB5 !important;
+  text-decoration: none !important;
+  transition: 0.5s !important;
+}
+body header .my_button {
+  border-radius: 3px;
+  background: #EEE;
+  color: #000;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+body header .my_button:hover {
+  background-color: #00ADB5;
+  color: #EEE;
+  transition: 0.5s;
+}
+body section {
+  background: #1F2022;
+}
+
+/*# sourceMappingURL=VStyles.css.map */
