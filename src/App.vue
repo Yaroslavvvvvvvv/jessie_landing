@@ -26,7 +26,7 @@
     </header>
     <main>
       <section class="first_section">
-        <div class="container pt-4">
+        <div class="container pt-4 pb-4">
           <div class="row">
             <div class="col-lg-10 col-md-10 col-sm-12">
               <div class="position-relative">
@@ -47,6 +47,7 @@
                 amet sint. Velit officia consequat duis enim velit mollit.<br>
                 Exercitation veniam consequat sunt nostrud amet. Amet minim<br>
                 mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+              <v-carousel class="small_carousel"></v-carousel>
             </div>
           </div>
         </div>
@@ -58,14 +59,15 @@
 <script>
 
 
+import VCarousel from "@/assets/VCarousel.vue";
+
 export default {
   name: 'App',
+  components: {VCarousel},
   data() {
-    return {
-      navbarColor: '#1F2022'
-    }
+    return {}
   },
-  components: {}
+  methods: {}
 }
 </script>
 
