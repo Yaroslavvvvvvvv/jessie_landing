@@ -30,7 +30,7 @@
           <div class="row">
             <div class="col-lg-10 col-md-10 col-sm-12">
               <div class="position-relative">
-                <img src="../src/assets/images/big_jessie.png" alt="" class="mw-100">
+                <img src="../src/assets/images/big_jessie.png" alt="" class="mw-100 h-auto">
                 <div class="position-absolute">
                   <h2 class="second_header">Pro<br>photographer</h2>
                 </div>
@@ -47,7 +47,77 @@
                 amet sint. Velit officia consequat duis enim velit mollit.<br>
                 Exercitation veniam consequat sunt nostrud amet. Amet minim<br>
                 mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
-              <v-carousel class="small_carousel"></v-carousel>
+              <b-carousel
+                  id="carousel-1"
+                  v-model="slide"
+                  :interval="4000"
+                  controls
+                  indicators
+                  background=""
+                  img-width="350"
+                  img-height="233"
+                  style="text-shadow: 1px 1px 2px #333;"
+                  @sliding-start="onSlideStart"
+                  @sliding-end="onSlideEnd"
+                  class="small_carousel"
+              >
+                <b-carousel-slide>
+                  <template #img>
+                    <img
+                        class="d-block img-fluid mw-100 h-100 ml-auto mr-auto"
+                        width="350"
+                        height="233"
+                        src="../src/assets/images/portfolio/my_first.jpg"
+                        alt="image slot"
+                    >
+                  </template>
+                </b-carousel-slide>
+                <b-carousel-slide>
+                  <template #img>
+                    <img
+                        class="d-block img-fluid mw-100 h-100 ml-auto mr-auto"
+                        width="350"
+                        height="233"
+                        src="../src/assets/images/portfolio/my_second.jpg"
+                        alt="image slot"
+                    >
+                  </template>
+                </b-carousel-slide>
+                <b-carousel-slide>
+                  <template #img>
+                    <img
+                        class="d-block img-fluid mw-100 h-100 ml-auto mr-auto"
+                        width="350"
+                        height="233"
+                        src="../src/assets/images/portfolio/my_third.jpg"
+                        alt="image slot"
+                    >
+                  </template>
+                </b-carousel-slide>
+                <b-carousel-slide>
+                  <template #img>
+                    <img
+                        class="d-block img-fluid mw-100 h-100 ml-auto mr-auto"
+                        width="350"
+                        height="233"
+                        src="../src/assets/images/portfolio/my_fourth.jpg"
+                        alt="image slot"
+                    >
+                  </template>
+                </b-carousel-slide>
+
+                <b-carousel-slide>
+                  <template #img>
+                    <img
+                        class="d-block img-fluid mw-100 h-100 ml-auto mr-auto"
+                        width="350"
+                        height="233"
+                        src="../src/assets/images/portfolio/my_fifth.jpg"
+                        alt="image slot"
+                    >
+                  </template>
+                </b-carousel-slide>
+              </b-carousel>
             </div>
           </div>
         </div>
@@ -59,15 +129,24 @@
 <script>
 
 
-import VCarousel from "@/assets/VCarousel.vue";
+
 
 export default {
   name: 'App',
-  components: {VCarousel},
   data() {
-    return {}
+    return {
+      slide: 0,
+      sliding: null
+    }
   },
-  methods: {}
+  methods: {
+    onSlideStart() {
+      this.sliding = true
+    },
+    onSlideEnd() {
+      this.sliding = false
+    }
+  }
 }
 </script>
 
