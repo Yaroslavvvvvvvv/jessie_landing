@@ -12,7 +12,7 @@ body header .my_logo {
 }
 body header .nav-link {
   color: #EEE !important;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans", sans-serif !important;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
@@ -38,8 +38,68 @@ body header .my_button:hover {
   color: #EEE;
   transition: 0.5s;
 }
-body section {
+body .first_section {
   background: #1F2022;
+}
+body .first_section .second_header {
+  margin-top: -250px;
+  color: #00ADB5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: 0.96px;
+}
+body .first_section .color_line {
+  background: #00ADB5;
+  width: 20px;
+  height: 3px;
+  margin-top: -83px;
+  margin-right: 10px;
+  border: #00ADB5 2px;
+}
+body .first_section .left_text {
+  margin-top: -100px;
+  color: #EEE;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40px;
+}
+body .first_section .first_text {
+  margin-top: 80px;
+  margin-left: -400px;
+  margin-bottom: 0;
+  color: #EEE;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+body .first_section .first_header {
+  color: #00ADB5;
+  margin-left: -400px;
+  margin-top: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 6.25rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 6px;
+}
+body .first_section .second_text {
+  margin-left: -400px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.64px;
 }
 
 /*# sourceMappingURL=VStyles.css.map */

@@ -25,10 +25,29 @@
       </div>
     </header>
     <main>
-      <section>
-        <div class="container">
-          <div class="position-relative">
-            <img src="../src/assets/images/big_jessie.png" alt="" class="mw-100">
+      <section class="first_section">
+        <div class="container pt-4">
+          <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-12">
+              <div class="position-relative">
+                <img src="../src/assets/images/big_jessie.png" alt="" class="mw-100">
+                <div class="position-absolute">
+                  <h2 class="second_header">Pro<br>photographer</h2>
+                </div>
+                <div class="position-absolute d-flex">
+                  <hr class="color_line">
+                  <p class="left_text">Let’s take your<br>photographs to next level</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+              <p class="first_text">Hello there, Nice to meet you. I am</p>
+              <h1 class="first_header">Jessie</h1>
+              <p class="second_text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br>
+                amet sint. Velit officia consequat duis enim velit mollit.<br>
+                Exercitation veniam consequat sunt nostrud amet. Amet minim<br>
+                mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+            </div>
           </div>
         </div>
       </section>
