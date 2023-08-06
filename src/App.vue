@@ -2,31 +2,31 @@
   <div id="app">
     <header>
       <div class="container pt-4 pb-4">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class=" my_logo" href="#">Jessie.</a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mr-auto">
-              <li class="nav-item pr-3">
-                <a class="nav-link my_item" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item pr-3">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item pr-3">
-                <a class="nav-link" href="#">Client reviews</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact me</a>
-              </li>
-            </ul>
-            <button class="btn my-2 my-sm-0 my_button" type="submit">Schedule a call</button>
-          </div>
-        </nav>
+        <b-navbar toggleable type="dark" variant="dark" class="my_navbar">
+          <b-navbar-brand href="#" class="my_logo">Jessie.</b-navbar-brand>
+
+          <b-navbar-toggle target="navbar-toggle-collapse">
+            <template #default="{ expanded }">
+              <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
+              <b-icon v-else icon="chevron-bar-down"></b-icon>
+            </template>
+          </b-navbar-toggle>
+
+          <b-collapse id="navbar-toggle-collapse" is-nav>
+            <b-navbar-nav class="ml-auto">
+              <b-nav-item href="#">Portfolio</b-nav-item>
+              <b-nav-item href="#">Blog</b-nav-item>
+              <b-nav-item href="#">Client reviews</b-nav-item>
+              <b-nav-item href="#">Contact me</b-nav-item>
+              <button class="btn my-2 my-sm-0 btn-lg my_button" type="submit">Schedule a call</button>
+            </b-navbar-nav>
+          </b-collapse>
+        </b-navbar>
       </div>
     </header>
     <main>
       <section class="first_section">
-        <div class="container pt-4 pb-4">
+        <div class="container pt-2 pb-4">
           <div class="row">
             <div class="col-lg-10 col-md-10 col-sm-12">
               <div class="position-relative">
@@ -127,8 +127,6 @@
 </template>
 
 <script>
-
-
 
 
 export default {

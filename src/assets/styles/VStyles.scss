@@ -7,7 +7,9 @@ body {
   header {
     background: $background;
     color: $text;
-
+.my_navbar{
+  background: $background !important;
+}
     .my_logo {
       color: $text;
       font-family: 'Josefin Sans', sans-serif;
@@ -17,6 +19,12 @@ body {
       line-height: normal;
     }
 
+
+    .my_nav {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
     .nav-link {
       color: $text !important;
       font-family: 'Josefin Sans', sans-serif !important;
@@ -24,6 +32,17 @@ body {
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+    }
+
+    @media (max-width: 991.98px) {
+      .nav-link {
+        font-size: 1rem;
+      }
+    }
+    @media (max-width: 767.98px) {
+      .nav-link {
+        font-size: 0.6rem;
+      }
     }
 
     .my_logo:hover, .nav-link:hover {
@@ -41,6 +60,12 @@ body {
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+    }
+
+    @media (max-width: 767.98px) {
+      .my_button {
+        font-size: 0.7rem;
+      }
     }
 
     .my_button:hover {
@@ -64,6 +89,28 @@ body {
       letter-spacing: 0.96px;
     }
 
+    @media (max-width: 991.98px) {
+      .second_header {
+        margin-top: -200px;
+        font-size: 1rem;
+        line-height: 20px;
+      }
+    }
+    @media (max-width: 767.98px) {
+      .second_header {
+        margin-top: -150px;
+        font-size: 0.7rem;
+        line-height: 15px;
+      }
+    }
+    @media (max-width: 575.98px) {
+      .second_header {
+        margin-top: -200px;
+        font-size: 0.5rem;
+        line-height: 10px;
+      }
+    }
+
     .color_line {
       background: $hover;
       width: 20px;
@@ -71,6 +118,23 @@ body {
       margin-top: -83px;
       margin-right: 10px;
       border: $hover 2px;
+    }
+
+    @media (max-width: 991.98px) {
+      .color_line {
+        margin-top: -58px;
+      }
+    }
+    @media (max-width: 767.98px) {
+      .color_line {
+        margin-top: -42px;
+        width: 10px;
+      }
+    }
+    @media (max-width: 575.98px) {
+      .color_line {
+        margin-top: -32px;
+      }
     }
 
     .left_text {
@@ -81,6 +145,29 @@ body {
       font-style: normal;
       font-weight: 800;
       line-height: 40px;
+    }
+
+    @media (max-width: 991.98px) {
+      .left_text {
+        margin-top: -70px;
+        font-size: 1rem;
+        line-height: 30px;
+      }
+    }
+    @media (max-width: 767.98px) {
+      .left_text {
+        margin-top: -50px;
+        font-size: 0.7rem;
+        line-height: 20px;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .left_text {
+        margin-top: -40px;
+        font-size: 0.6rem;
+        line-height: 20px;
+      }
     }
 
     .first_text {
@@ -118,8 +205,78 @@ body {
       line-height: 30px;
       letter-spacing: 0.64px;
     }
-.small_carousel{
-  margin-left: -350px;
-}
+
+    .small_carousel {
+      margin-left: -350px;
+    }
+
+    @media (max-width: 1199.98px) {
+      .first_text {
+        margin-top: 0;
+      }
+    }
+    @media (max-width: 991.98px) {
+      .position-relative {
+        margin-top: 60px;
+      }
+      .first_text {
+        margin-top: 0;
+        margin-left: -250px;
+        font-size: 1rem;
+      }
+      .first_header {
+        margin-left: -250px;
+        font-size: 4.5rem;
+      }
+      .second_text {
+        margin-left: -250px;
+        font-size: 0.6rem;
+        line-height: 20px;
+
+        br {
+          display: none;
+        }
+      }
+      .small_carousel {
+        margin-left: -250px;
+      }
+    }
+    @media (max-width: 767.98px) {
+      .position-relative {
+        margin-top: 50px;
+      }
+      .first_text {
+        margin-top: 50px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      .first_header {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        font-size: 4rem;
+      }
+      .second_text {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1rem;
+        line-height: 30px;
+      }
+      .small_carousel {
+        margin-top: 50px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    @media (max-width: 575.98px) {
+      .first_text {
+        font-size: 1.2rem;
+      }
+      .second_text{
+        font-size: 0.8rem;
+      }
+    }
   }
 }
