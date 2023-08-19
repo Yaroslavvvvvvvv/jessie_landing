@@ -3,7 +3,7 @@
     <header>
       <div class="container pt-4 pb-4">
         <b-navbar toggleable type="dark" variant="dark" class="my_navbar">
-          <b-navbar-brand href="#" class="my_logo">Jessie.</b-navbar-brand>
+          <b-navbar-brand href="#" class="my_logo animated fadeInDown">Jessie.</b-navbar-brand>
 
           <b-navbar-toggle target="navbar-toggle-collapse">
             <template #default="{ expanded }">
@@ -32,18 +32,18 @@
               <div class="position-relative">
                 <img src="../src/assets/images/big_jessie.png" alt="" class="mw-100 h-auto">
                 <div class="position-absolute">
-                  <h2 class="second_header">Pro<br>photographer</h2>
+                  <h2 class="second_header animated fadeInRightBig">Pro<br>photographer</h2>
                 </div>
                 <div class="position-absolute d-flex">
                   <hr class="color_line">
-                  <p class="left_text">Let’s take your<br>photographs to next level</p>
+                  <p class="left_text animated fadeInRightBig">Let’s take your<br>photographs to next level</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-12">
-              <p class="first_text">Hello there, Nice to meet you. I am</p>
-              <h1 class="first_header">Jessie</h1>
-              <p class="second_text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br>
+              <p class="first_text animated animated rotateInDownLeft">Hello there, Nice to meet you. I am</p>
+              <h1 class="first_header animated animated slideInRight">Jessie</h1>
+              <p class="second_text ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do<br>
                 amet sint. Velit officia consequat duis enim velit mollit.<br>
                 Exercitation veniam consequat sunt nostrud amet. Amet minim<br>
                 mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
@@ -127,7 +127,7 @@
 </template>
 
 <script>
-
+import 'vue2-animate/dist/vue2-animate.min.css';
 
 export default {
   name: 'App',
